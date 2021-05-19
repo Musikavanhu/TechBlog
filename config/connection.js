@@ -1,19 +1,19 @@
- var mysql = require('mysql')
-  var connection = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database : process.env.DB_NAME,
-  sockertPath: '/var/run/mysqld/mysqld.sock'
-})
+// Dependencies
+// Sequelize constructor
+const Sequelize = require('sequelize');
+// dotenv for local environmental variables for user name and password
+require('dotenv').config();
 
- connection.connect()
+let sequelize;
 
- connection.query('SELECT 1 + 1 AS solution',
- function (error, results, fields) {
-if (error) throw error;
-console.log('The solution is: ', results[0].
-  solution)
-});
+if (process.env.JAWSDB_URL) {
+  sequelize = new Sequelize(process.env.JAWSDB_URL);
+} else {
+  sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PW, {
+    host: 'localhost',
+    dialect: 'mysql',
+    port: 3306
+  });
+}
 
- module.exports = connection;
+module.exports = sequelize;
