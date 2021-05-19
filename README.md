@@ -1,23 +1,58 @@
 # MVC Tech Blog
 
-## Project Description
-This project uses the Model-View-Controller (MVC) paradigm to create a blog-style website where developers can create an account, edit their information, make posts, edit posts, and comment on other user's posts.
+## Description
+This is a basic CMS-style Tech blog. You are presented with a homepage that shows all the current posts. A nav bar at the top gives you the option of going to the homepage, dashboard or login. 
 
-## Tools Used to Create This Project
-* JavaScript ES6
-* Node.js
-* Express.js
-* dotenv (npm package used to store environmental variables used in a project locally so sensitive data like root passwords are not exposed on GitHub)
-* MySQL
-* Sequelize (npm package for integrating MySQL and Node.js)
-* bcrypt (npm package for password hashing)
-* handlebars (npm package for a template engine used for html and javascript integration on the front-end)
-* Heroku (hosting platform)
-  * JawsDB (a Heroku add-on for hosting the MySQL database)
+On the login page you are given the ability to login with your username and password if you already have one or signup a new user. 
+
+Once logged in you will be taken to your dashboard where you can view all of your own posts as well as create a new one. Clicking on an existing post allows you to edit it.
+
+On the homepage clicking on a post title will open it and allow you to comment on it.
+
+The Login option switches to a Logout after sign in, and the page will auto logout after 30 minutes
+
+## Table of Contents
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Technologies](#Technologies)
+* [Preview](#Preview)
+
+## Installation
+No installation is needed as the app is deployed on heroku
+
 
 ## Usage
-The application is deployed on Heroku at https://warm-river-26748.herokuapp.com/ 
+App can be viewed at https://sleepy-thicket-80653.herokuapp.com/ 
 
-Visit the website on Heroku. You can view posts and visit links as a visitor, create your own account, and as an authenticated user you can add your own posts and comment on other posts as well. You can edit titles and content or delete your own posts as well. You can also update your username, email, and password.
 
-Warning: New data is stored on Heroku for an indeterminate period of time. At least once a day the dynos will be restarted and any new data included new users might be wiped out.
+## Technologies
+This application was made using
+
+![Javascript](https://img.shields.io/badge/-JavaScript-f7df1e?style=for-the-badge&logo=javascript&logoColor=black)
+
+![MySQL](https://img.shields.io/badge/-MySql-4479a1?style=for-the-badge&logo=mysql&logoColor=white)
+
+![Insomnia](https://img.shields.io/badge/-Insomnia-5849BE?style=for-the-badge&logo=insomnia&logoColor=white)
+
+![Heroku](https://img.shields.io/badge/-Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) 
+with the following npm packages
+* `express.js` 
+* `dotenv`
+* `Sequelize`
+* `bcrypt`
+* `express-handlebars` 
+* `express-session`
+* `connect-session-sequelize`
+
+
+## Preview
+### Screenshots
+![Homepage](./assets/preview1.jpg)
+![Dashboard](./assets/preview2.jpg)
+![Create New Post](./assets/preview3.jpg)
+![Single post view](./assets/preview4.jpg)
+
+
+
