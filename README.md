@@ -24,3 +24,8 @@ DB_PW='XXX'
 ```
 
 Delpoyed in heroku as well!
+
+
+## Installation
+No installation is needed as the app is deployed on heroku
+
