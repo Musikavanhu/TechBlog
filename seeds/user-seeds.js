@@ -1,35 +1,50 @@
 const { User } = require('../models');
 
 const userData = [
-  {
-    username: "Cassie",
-    email: "cassie@gmail.com",
-    password: "password1234"
-  },
-  {
-    username: "Josh",
-    email: "josh@gmail.com",
-    password: "password1234"
-  },
-  {
-    username: "Steven",
-    email: "steven@gmail.com",
-    password: "password1234"
-  },
-  {
-    username: "Emily",
-    email: "emily@gmail.com",
-    password: "password1234"
-  },
-  {
-    username: "John",
-    email: "john@gmail.com",
-    password: "password1234"
-  }
-];
+    {
+        username: "martin_bour",
+        twitter: "martinb",
+        github: "martinb",
+        email: "martin_b@gmail.com",
+        password: "p@ssword1"
+    },
+    {
+        username: "matt_b",
+        twitter: "mathewb",
+        github: "mathewb",
+        email: "mathew_b@gmail.com",
+        password: "p@ssword2"
+    },
+    {
+        username: "shaun_c",
+        twitter: "shaun",
+        github: "shaun",
+        email: "shaun_c@gmail.com",
+        password: "p@ssword3"
+    },
+    {
+        username: "lee_n",
+        twitter: "leenorris",
+        github: "leenorris",
+        email: "lee_n@gmail.com",
+        password: "p@ssword4"
+    },
+    {
+        username: "priya_r",
+        twitter: "priyaravi23",
+        github: "priyaravi23",
+        email: "priya_r@gmail.com",
+        password: "p@ssword5"
+    },
+    {
+        username: "pooja",
+        twitter: "pooja_w",
+        github: "pooja",
+        email: "pooja@gmail.com",
+        password: "p@ssword6"
+    }
+]
 
 const seedUsers = () => User.bulkCreate(userData);
-
-//  WARNING seed bulk create does NOT hash the password, so they must be hashed via the update route before the login route will work!
 
 module.exports = seedUsers;
