@@ -5,9 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
+    
     "watch": "nodemon server.js",
     "seed": "node seeds/index.js",
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start": "if-env NODE_ENV=production && node server.js start:prod || npm run start:dev",
     "start:prod": "node server.js",
     "start:dev": "concurrently -k \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
