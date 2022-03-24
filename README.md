@@ -1,7 +1,11 @@
 ## MVC Tech Blog
 
 
-https://mvc-tech-blog.herokuapp.com/
+Deployment: https://mvc-tech-blog.herokuapp.com/
+
+<img width="1194" alt="Screen Shot 2022-03-24 at 10 46 45 PM" src="https://user-images.githubusercontent.com/5069914/159955961-f5b9f3f0-f031-4bc3-918c-45d22a151398.png">
+
+<img width="1140" alt="Screen Shot 2022-03-24 at 10 47 00 PM" src="https://user-images.githubusercontent.com/5069914/159955931-e4713657-ef3e-4b61-a659-7872f7e04079.png">
 
 ### User Story
 
